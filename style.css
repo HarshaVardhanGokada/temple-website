@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #fdfaf6;
+    color: #333;
+    transition: 0.3s;
+}
+
+/* DARK MODE */
+body.dark {
+    background: #121212;
+    color: #f1f1f1;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(90deg, #d97706, #f59e0b);
+    color: white;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+body.dark header {
+    background: #1f1f1f;
+}
+
+/* NAV */
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    margin: 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: white;
+    color: #d97706;
+}
+
+/* HERO SECTION */
+.home {
+    padding: 40px;
+}
+
+.home img {
+    width: 320px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+/* TITLE */
+.home h2 {
+    margin-top: 20px;
+    font-size: 28px;
+    color: #d97706;
+}
+
+/* CARD */
+.card {
+    background: white;
+    padding: 25px;
+    margin: 25px auto;
+    width: 80%;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+body.dark .card {
+    background: #1e1e1e;
+}
+
+/* BUTTON */
+button {
+    background: linear-gradient(90deg, #d97706, #f59e0b);
+    color: white;
+    padding: 14px 30px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+/* DONATION HIGHLIGHT */
+.highlight {
+    color: #d97706;
+    font-weight: bold;
+}
+
+/* FOOTER */
+footer {
+    background: #1a1a1a;
+    color: white;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* TOGGLE BUTTON */
+.toggle-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: black;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact - Temple Construction</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Dark Mode Toggle -->
+<div class="toggle-btn" onclick="toggleMode()">🌙</div>
+
+<header>
+    <h1>📞 Contact for Temple Construction</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="donate.html">Donate</a>
+    </nav>
+</header>
+
+<section>
+    <div class="card">
+
+        <h2>🙏 Support Temple Construction</h2>
+
+        <p>
+            We are currently constructing the 
+            <b>Sri Devi Sametha Danavaibabu Temple</b>.
+            Devotees who wish to contribute or need more details
+            can contact us using the information below.
+        </p>
+
+        <hr>
+
+        <p><b>📱 Phone:</b> 9391372583</p>
+
+        <p><b>📧 Email:</b><br>
+        sreechandisamethadanavayababut@gmail.com</p>
+
+        <p><b>📍 Location:</b> Santoshnagar</p>
+
+        <hr>
+
+        <p>
+            Your contribution will help in building the temple and
+            supporting future spiritual activities.
+        </p>
+
+        <p class="highlight">
+            🙏 Every donation counts towards building this sacred place 🙏
+        </p>
+
+    </div>
+</section>
+
+<footer>
+    © 2026 Sri Devi Sametha Danavaibabu Temple Construction | With devotion 🙏
+</footer>
+
+<!-- Dark Mode Script -->
+<script>
+function toggleMode() {
+    document.body.classList.toggle("dark");
+
+    if (document.body.classList.contains("dark")) {
+        localStorage.setItem("mode", "dark");
+    } else {
+        localStorage.setItem("mode", "light");
+    }
+}
+
+window.onload = function () {
+    if (localStorage.getItem("mode") === "dark") {
+        document.body.classList.add("dark");
+    }
+};
+</script>
+
+</body>
+</html>

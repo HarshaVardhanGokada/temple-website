@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sri Devi Sametha Danavaibabu Temple</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Dark Mode Toggle -->
+<div class="toggle-btn" onclick="toggleMode()">🌙</div>
+
+<header>
+    <h1>🛕 Sri Devi Sametha Danavaibabu Temple</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="events.html">Events</a>
+        <a href="donate.html">Donate</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section class="home">
+
+    <!-- Temple Image -->
+    <img src="temple.jpg" alt="Temple Image">
+
+    <!-- Main Heading -->
+    <h2>🙏 Temple Construction in Progress 🙏</h2>
+
+    <!-- Main Card -->
+    <div class="card">
+
+        <p>
+            We are currently constructing the 
+            <b>Sri Devi Sametha Danavaibabu Temple</b>.
+            This sacred place will serve as a center of devotion, peace, and spirituality for our community.
+        </p>
+
+        <p>
+            Your kind contribution will help us complete this divine mission and build a temple for future generations.
+        </p>
+
+        <p class="highlight">
+            🙏 Every donation brings us closer to completion 🙏
+        </p>
+
+        <!-- Donate Button -->
+        <a href="donate.html">
+            <button>Donate Now 💰</button>
+        </a>
+
+    </div>
+
+</section>
+
+<footer>
+    © 2026 Sri Devi Sametha Danavaibabu Temple Construction | With devotion 🙏
+</footer>
+
+<!-- DARK MODE SCRIPT -->
+<script>
+function toggleMode() {
+    document.body.classList.toggle("dark");
+
+    if (document.body.classList.contains("dark")) {
+        localStorage.setItem("mode", "dark");
+    } else {
+        localStorage.setItem("mode", "light");
+    }
+}
+
+window.onload = function () {
+    if (localStorage.getItem("mode") === "dark") {
+        document.body.classList.add("dark");
+    }
+};
+</script>
+
+</body>
+</html>

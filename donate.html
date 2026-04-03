@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Donate - Temple Construction</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Dark Mode Toggle -->
+<div class="toggle-btn" onclick="toggleMode()">🌙</div>
+
+<header>
+    <h1>🙏 Donate for Temple Construction</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section>
+
+    <div class="card">
+
+        <h2>Support Temple Construction 🙏</h2>
+
+        <p>
+            Your generous donation will help us complete the construction of the 
+            <b>Sri Devi Sametha Danavaibabu Temple</b> and create a divine space 
+            for future generations.
+        </p>
+
+        <hr>
+
+        <!-- QR Code -->
+        <img src="/Users/gokadaharshavardhan/Desktop/qr.png" width="220">
+
+        <p class="highlight">Scan & Donate via UPI</p>
+
+        <p><b>UPI ID:</b> 9391372583@sbi</p>
+
+        <hr>
+
+        <!-- PAY BUTTON -->
+        <a href="upi://pay?pa=9391372583@sbi&pn=SREE%20CHANDI%20SAMETHA%20DANAVAYABABU%20TRUST&cu=INR">
+            <button>Pay via UPI 📱</button>
+        </a>
+
+        <p style="margin-top:10px;">
+            Click above to open PhonePe / GPay / Paytm
+        </p>
+
+        <hr>
+
+        <!-- I HAVE DONATED BUTTON -->
+        <button onclick="showMessage()">I Have Donated 🙏</button>
+
+        <p id="thankyou" style="display:none; color:green; font-weight:bold; margin-top:10px;">
+            🙏 Thank you for your generous donation!  
+            May Sri Devi bless you and your family ✨
+        </p>
+
+        <hr>
+
+        <!-- WHATSAPP CONFIRMATION -->
+        <a href="https://wa.me/919391372583?text=I%20have%20donated%20for%20Sri%20Devi%20Sametha%20Danavaibabu%20Temple%20construction">
+            <button>Confirm Donation on WhatsApp 📲</button>
+        </a>
+
+        <p style="margin-top:10px;">
+            You can confirm your donation through WhatsApp
+        </p>
+
+        <hr>
+
+        <p class="highlight">
+            🙏 Every donation brings us closer to completing this sacred temple 🙏
+        </p>
+
+    </div>
+
+</section>
+
+<footer>
+    © 2026 Sri Devi Sametha Danavaibabu Temple Construction | With devotion 🙏
+</footer>
+
+<!-- DARK MODE + MESSAGE SCRIPT -->
+<script>
+function toggleMode() {
+    document.body.classList.toggle("dark");
+
+    if (document.body.classList.contains("dark")) {
+        localStorage.setItem("mode", "dark");
+    } else {
+        localStorage.setItem("mode", "light");
+    }
+}
+
+window.onload = function () {
+    if (localStorage.getItem("mode") === "dark") {
+        document.body.classList.add("dark");
+    }
+};
+
+function showMessage() {
+    document.getElementById("thankyou").style.display = "block";
+}
+</script>
+
+</body>
+</html>
